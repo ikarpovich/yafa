@@ -1,0 +1,17 @@
+service: yafa
+provider:
+  name: aws
+  runtime: nodejs4.3
+  credentials: ${file(./.env.yml):credentials}
+  region: eu-west-1
+custom:
+  writeEnvVars:
+    NODE_ENV: ${file(./.env.yml):${opt:stage}.NODE_ENV}
+    DATABASE_URL: ${file(./.env.yml):${opt:stage}.DATABASE_URL}
+plugins:
+  - serverless-plugin-write-env-vars
+functions:
+  api:
+    handler: lambda.handler
+    events:
+      - http: ANY {proxy+}

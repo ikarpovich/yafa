@@ -18,9 +18,14 @@
   },
   "homepage": "https://github.com/ikarpovich/yafa)#readme",
   "dependencies": {
+    "aws-serverless-express": "^3.0.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "morgan": "^1.8.2",
     "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.15.1",
+    "serverless-plugin-write-env-vars": "^1.0.1"
   }
 }
