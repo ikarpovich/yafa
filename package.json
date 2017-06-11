@@ -1,0 +1,31 @@
+{
+  "name": "yafa",
+  "version": "0.0.1",
+  "description": "Yet another finance application",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikarpovich/yafa).git"
+  },
+  "author": "Karpovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikarpovich/yafa)/issues"
+  },
+  "homepage": "https://github.com/ikarpovich/yafa)#readme",
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.15.1",
+    "serverless-plugin-write-env-vars": "^1.0.1"
+  }
+}
