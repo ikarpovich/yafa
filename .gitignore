@@ -58,6 +58,8 @@ typings/
 .env
 .env.yml
 
-#ide files
+# ide files
 .idea
 
+# local DB
+db.sqlite
